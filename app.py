@@ -8,7 +8,7 @@ from engine.processor import process_video
 # =====================================================
 # PAGE CONFIG
 # =====================================================
-LOGO_PATH = r"C:\Users\Prisha\OneDrive - Vohra Soft\My Laptop 2.0\Uni\Academics\Sem 6\CV\VIGIL-AI\VIGIL-AI_Logo.png"
+LOGO_PATH = "VIGIL-AI_Logo.png"
 
 st.set_page_config(
     page_title="VIGIL-AI",
@@ -177,7 +177,7 @@ elif st.session_state.page == "process":
                     use_container_width=True
                 )
 
-            with st.expander("📊 Incident Timeline", expanded=True):
+            with st.expander("Incident Timeline", expanded=True):
 
                 st.subheader(scenario["title"])
                 st.write("Risk Level:", scenario["risk"])
