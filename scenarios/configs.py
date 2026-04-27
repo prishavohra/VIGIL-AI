@@ -3,7 +3,7 @@ SCENARIOS = {
     "Shooting.mp4": {
         "title": "Supermarket Shooting",
         "risk": "HIGH",
-        "label_folder": r"C:\Users\Prisha\OneDrive - Vohra Soft\My Laptop 2.0\Uni\Academics\Sem 6\CV\VIGIL-AI\labels\labels_Shooting",
+        "label_folder": "labels/labels_Shooting",
 
         "events": [
             {"time": 1, "msg": "⚠️ SUSPICIOUS ACTIVITY - SHOOTING"},
@@ -18,7 +18,7 @@ SCENARIOS = {
     "Weapon_Drop.mp4": {
         "title": "Weapon Dropped by Armed Civilian",
         "risk": "MEDIUM",
-        "label_folder": r"C:\Users\Prisha\OneDrive - Vohra Soft\My Laptop 2.0\Uni\Academics\Sem 6\CV\VIGIL-AI\labels\lables_Arrest",
+        "label_folder": "labels/labels_Arrest",
 
         "events": [
             {"time": 2, "msg": "🟡 WEAPON DROP DETECTED"}
@@ -28,7 +28,7 @@ SCENARIOS = {
     "Abuse.mp4": {
         "title": "Police officers abuse caught on bodycam",
         "risk": "HIGH",
-        "label_folder": r"C:\Users\Prisha\OneDrive - Vohra Soft\My Laptop 2.0\Uni\Academics\Sem 6\CV\VIGIL-AI\labels\labels_Abuse",
+        "label_folder": "labels/labels_Abuse",
 
         "events": [
             {"time": 15, "msg": "⚠️ SUSPICIOUS ACTIVITY - ABUSE"},
@@ -53,9 +53,9 @@ SCENARIOS = {
     }, 
 
     "Weapon.mp4": {
-        "title": "Person threatens with knife",
+        "title": "Person threatens with a knife",
         "risk": "HIGH",
-        "label_folder": r"C:\Users\Prisha\OneDrive - Vohra Soft\My Laptop 2.0\Uni\Academics\Sem 6\CV\VIGIL-AI\labels\labels_Weapon",
+        "label_folder": "labels/labels_Weapon",
 
         "events": [
             {"time": 1, "msg": "🔴 HIGH RISK - WEAPON DETECTED"},
@@ -78,7 +78,7 @@ SCENARIOS = {
     "Assault.mp4": {
         "title": "Person physically attacks another person",
         "risk": "MEDIUM",
-        "label_folder": r"C:\Users\Prisha\OneDrive - Vohra Soft\My Laptop 2.0\Uni\Academics\Sem 6\CV\VIGIL-AI\labels\labels_Assault",
+        "label_folder": "labels/labels_Assault",
 
         "events": [
             {"time": 3, "msg": "⚠️ SUSPICIOUS ACTIVITY - ASSAULT"},
@@ -102,7 +102,7 @@ SCENARIOS = {
     "Assault2.mp4": {
         "title": "Road Fight between two people",
         "risk": "MEDIUM",
-        "label_folder": r"C:\Users\Prisha\OneDrive - Vohra Soft\My Laptop 2.0\Uni\Academics\Sem 6\CV\VIGIL-AI\labels\labels_Assault2",
+        "label_folder": "labels/labels_Assault2",
 
         "events": [
             {"time": 9, "msg": "⚠️ SUSPICIOUS ACTIVITY - ASSAULT"}, 
