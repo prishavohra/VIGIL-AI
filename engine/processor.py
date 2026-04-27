@@ -10,7 +10,7 @@ import re
 # labels_arrest/
 # labels_fight/
 # =====================================================
-BASE_LABEL_PATH = r"C:\Users\Prisha\OneDrive - Vohra Soft\My Laptop 2.0\Uni\Academics\Sem 6\CV\VIGIL-AI\labels"
+BASE_LABEL_PATH = "labels"
 
 IMG_W = None
 IMG_H = None
