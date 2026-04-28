@@ -1,9 +1,9 @@
 SCENARIOS = {
 
-    "Shooting.mp4": {
+    "shooting.mp4": {
         "title": "Supermarket Shooting",
         "risk": "HIGH",
-        "label_folder": "labels/labels_Shooting",
+        "label_folder": "labels/labels_shooting",
 
         "events": [
             {"time": 1, "msg": "⚠️ SUSPICIOUS ACTIVITY - SHOOTING"},
@@ -15,20 +15,20 @@ SCENARIOS = {
         ]
     },
 
-    "Weapon_Drop.mp4": {
+    "weapon_drop.mp4": {
         "title": "Weapon Dropped by Armed Civilian",
         "risk": "MEDIUM",
-        "label_folder": "labels/labels_Arrest",
+        "label_folder": "labels/labels_weapon_drop",
 
         "events": [
             {"time": 2, "msg": "🟡 WEAPON DROP DETECTED"}
         ]
     }, 
 
-    "Abuse.mp4": {
+    "abuse.mp4": {
         "title": "Police officers abuse caught on bodycam",
         "risk": "HIGH",
-        "label_folder": "labels/labels_Abuse",
+        "label_folder": "labels/labels_abuse",
 
         "events": [
             {"time": 15, "msg": "⚠️ SUSPICIOUS ACTIVITY - ABUSE"},
@@ -52,10 +52,10 @@ SCENARIOS = {
         ]
     }, 
 
-    "Weapon.mp4": {
+    "weapon.mp4": {
         "title": "Person threatens with a knife",
         "risk": "HIGH",
-        "label_folder": "labels/labels_Weapon",
+        "label_folder": "labels/labels_weapon",
 
         "events": [
             {"time": 1, "msg": "🔴 HIGH RISK - WEAPON DETECTED"},
@@ -75,10 +75,10 @@ SCENARIOS = {
         ]
     },
 
-    "Assault.mp4": {
+    "assault.mp4": {
         "title": "Person physically attacks another person",
         "risk": "MEDIUM",
-        "label_folder": "labels/labels_Assault",
+        "label_folder": "labels/labels_assault",
 
         "events": [
             {"time": 3, "msg": "⚠️ SUSPICIOUS ACTIVITY - ASSAULT"},
@@ -99,10 +99,10 @@ SCENARIOS = {
         ]
     },
 
-    "Assault2.mp4": {
+    "assault2.mp4": {
         "title": "Road Fight between two people",
         "risk": "MEDIUM",
-        "label_folder": "labels/labels_Assault2",
+        "label_folder": "labels/labels_assault2",
 
         "events": [
             {"time": 9, "msg": "⚠️ SUSPICIOUS ACTIVITY - ASSAULT"}, 
