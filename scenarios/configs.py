@@ -111,5 +111,18 @@ SCENARIOS = {
             {"time": 12, "msg": "⚠️ SUSPICIOUS ACTIVITY - ASSAULT"},
             {"time": 13, "msg": "⚠️ SUSPICIOUS ACTIVITY - ASSAULT"},
         ]
+    }, 
+
+    "shooting2.mp4": {
+        "title": "Man threatens to shoot himself",
+        "risk": "HIGH",
+        "label_folder": "labels/labels_assault2",
+
+        "events": [
+            {"time": 4, "msg": "🔴 HIGH RISK - WEAPON DETECTED"}, 
+            {"time": 20, "msg": "🔴 HIGH RISK - WEAPON DETECTED"},
+            {"time": 21, "msg": "🔴 HIGH RISK - WEAPON DETECTED"},
+            {"time": 22, "msg": "🔴 HIGH RISK - WEAPON DETECTED"}
+        ]
     }
 }
