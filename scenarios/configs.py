@@ -116,7 +116,7 @@ SCENARIOS = {
     "shooting2.mp4": {
         "title": "Man threatens to shoot himself",
         "risk": "HIGH",
-        "label_folder": "labels/labels_assault2",
+        "label_folder": "labels/labels_shooting2",
 
         "events": [
             {"time": 4, "msg": "🔴 HIGH RISK - WEAPON DETECTED"}, 
