@@ -71,7 +71,8 @@ with st.sidebar:
         "Dashboard",
         [
             "Home",
-            "Process Video"
+            "GAN Video Deblurring",
+            "AI Threat Analysis"
         ]
     )
 
@@ -81,8 +82,11 @@ with st.sidebar:
 if nav == "Home":
     st.session_state.page = "landing"
 
-elif nav == "Process Video":
+elif nav == "AI Threat Analysis":
     st.session_state.page = "process"
+
+elif nav == "GAN Video Deblurring":
+    st.session_state.page = "gan"
 
 # =====================================================
 # LANDING PAGE
@@ -127,11 +131,11 @@ if st.session_state.page == "landing":
     c4.info("Streamlit Deployment")
 
 # =====================================================
-# PROCESS VIDEO PAGE
+# THREAT ANALYSIS PAGE
 # =====================================================
 elif st.session_state.page == "process":
 
-    st.title("Video Intelligence Engine")
+    st.title("AI Threat Analysis")
 
     uploaded = st.file_uploader(
         "Upload BodyCam / CCTV Video",
@@ -193,3 +197,51 @@ elif st.session_state.page == "process":
                     ts = f"{hrs:02d}:{mins:02d}:{secs:02d}"
 
                     st.write(f"**{ts}** — {e['msg']}")
+
+
+# =====================================================
+# GAN PAGE
+# =====================================================
+elif st.session_state.page == "gan":
+
+    from engine.gan_processor import get_gan_output
+
+    st.title("GAN Video Deblurring")
+
+    uploaded = st.file_uploader(
+        "Upload Blurry BodyCam Video",
+        type=["mp4"],
+        key="ganupload"
+    )
+
+    if uploaded:
+
+        st.success("Video Uploaded")
+
+        if st.button("Run GAN Deblurring"):
+
+            progress = st.progress(0)
+            status = st.empty()
+
+            for i in range(101):
+                progress.progress(i)
+                status.write(f"Running GAN Deblurring... {i}%")
+                time.sleep(0.03)
+
+            output_path = get_gan_output(uploaded.name)
+
+            if output_path and os.path.exists(output_path):
+
+                st.success("Deblurring Complete")
+
+                with open(output_path, "rb") as f:
+                    st.download_button(
+                        "⬇ Download Deblurred Video",
+                        data=f,
+                        file_name=uploaded.name,
+                        mime="video/mp4",
+                        use_container_width=True
+                    )
+
+            else:
+                st.error("No hardcoded GAN output found for this filename.")

@@ -62,8 +62,8 @@ def draw_alert(frame, msg, y_offset=0):
         color = (255, 0, 0)
 
     font = cv2.FONT_HERSHEY_DUPLEX
-    scale = 0.55
-    thickness = 1
+    scale = 0.95
+    thickness = 2
 
     text_size = cv2.getTextSize(msg_clean, font, scale, thickness)[0]
 
@@ -233,16 +233,16 @@ def process_video(input_path, output_path, scenario):
                 # =====================================
                 if "weapon" in label.lower() or "gun" in label.lower() or "knife" in label.lower():
 
-                    cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 0, 255), 1)
+                    cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 0, 255), 3)
 
                     cv2.putText(
                         frame,
                         label.upper(),
                         (x1, max(20, y1 - 6)),
                         cv2.FONT_HERSHEY_DUPLEX,
-                        0.75,
+                        0.85,
                         (0, 0, 255),
-                        1,
+                        2,
                         cv2.LINE_AA
                     )
 
@@ -251,16 +251,16 @@ def process_video(input_path, output_path, scenario):
                 # =====================================
                 else:
 
-                    cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 1)
+                    cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 3)
 
                     cv2.putText(
                         frame,
                         label,
                         (x1, max(20, y1 - 6)),
                         cv2.FONT_HERSHEY_DUPLEX,
-                        0.75,
+                        0.85,
                         (0, 255, 0),
-                        1,
+                        2,
                         cv2.LINE_AA
                     )
 
@@ -280,9 +280,9 @@ def process_video(input_path, output_path, scenario):
             timestamp,
             (width - 135, 25),
             cv2.FONT_HERSHEY_DUPLEX,
-            0.55,
+            0.75,
             (255, 255, 255),
-            1,
+            2,
             cv2.LINE_AA
         )
 

@@ -126,3 +126,13 @@ SCENARIOS = {
         ]
     }
 }
+
+GAN_OUTPUTS = {
+    "shooting.mp4": "GAN uploads/shooting.mp4",
+    "weapon.mp4": "GAN uploads/weapon.mp4",
+    "weapon_drop.mp4": "GAN uploads/weapon_drop.mp4",
+    "abuse.mp4": "GAN uploads/abuse.mp4",
+    "assault.mp4": "GAN uploads/assault.mp4",
+    "assault2.mp4": "GAN uploads/assault2.mp4",
+    "shooting2.mp4": "GAN uploads/shooting2.mp4"
+}
